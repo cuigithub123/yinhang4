@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动端设计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../font11/iconfont.css">
+    <style>
+        h1,h2,h3,h4,h5,h6,p,ul,form,dl,dd,dt,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        img{
+            display: block;
+            border: none;
+            /* float: left; */
+        }
+        body{
+            min-width: 320px;
+            /* max-width: 800px; */
+            /* margin: 0 auto; */
+           display: flex;
+           flex-wrap: wrap;
+           background-color: rgb(246, 246, 246);
+
+        }
+        ul{
+            width: 100%;
+            display: flex;
+           flex-wrap: wrap;
+          
+           
+        }
+        ul:nth-of-type(-n+7) li
+        {
+            width: 50%;
+
+        }
+        ul:nth-of-type(2) li:nth-of-type(1) img{
+            float: left;
+        }
+        ul:nth-of-type(1) li:nth-of-type(2) img{
+            float: right;
+        }
+        ul:nth-of-type(8){
+            height: 50px;
+            background-color: rgb(246, 246, 246);
+            position: fixed;
+            bottom: 0;
+            z-index: 55;
+            justify-content: space-around;
+            margin-bottom: 5vw;
+           
+        }
+        ul:nth-of-type(8) li{
+            width: 13vw;
+            height: 15vw;
+            padding-bottom: 3vw;
+           
+            
+
+        }
+        ul:nth-of-type(8) li>span :nth-of-type(2){
+            font-size: 3vw;
+            width: 16vw;
+             display: block ruby;
+        }
+        ul:nth-of-type(1){
+            background-color: #fff;
+            line-height: 10vw;
+        }
+        ul:nth-of-type(2){
+            background-color: #fff;
+            line-height: 25vw;
+        }
+        ul:nth-of-type(3){
+            width: 100%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 15vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            
+        }
+        ul:nth-of-type(1) li>span{
+            margin-left: 3vw;
+        }
+        ul:nth-of-type(3) li{
+            line-height: 15vw;
+        }
+        ul:nth-of-type(4){
+            width: 100%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 15vw;
+            margin-top: 1vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            
+        }
+        ul:nth-of-type(4) li{
+            line-height: 15vw;
+        }
+        ul:nth-of-type(5){
+            width: 100%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 15vw;
+            margin-top: 1vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            
+        }
+        ul:nth-of-type(5) li{
+            line-height: 15vw;
+        }
+        ul:nth-of-type(6){
+            width: 100%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 15vw;
+            margin-top: 1vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            
+        }
+        ul:nth-of-type(6) li{
+            line-height: 15vw;
+        }
+        ul:nth-of-type(7){
+            width: 100%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 15vw;
+            margin-top: 2vw;
+            margin-bottom: 25vw;
+            background-color: #fff;
+            border-radius: 10px;
+            
+        }
+        ul:nth-of-type(7) li{
+            line-height: 15vw;
+        }
+        .a{
+            width: 50%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 25vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-left: 1.5vw;
+            line-height: 10vw;
+        }
+        .b{
+            width: 47%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            height: 25vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-left: 1.5vw;
+            line-height: 10vw;
+            
+        }
+        /* .aa{
+            float: left;
+        }
+        .ba{
+            float: left;
+        }
+        .aa>span{
+            margin-left: 2vw;
+        }
+        .ba>span{
+            margin-left: 2vw;
+        }
+        .aa>h2{
+            margin-left: 2vw;
+        }
+        .aa>h2{
+            margin-left: 2vw;
+        } */
+        .c>li{
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin-left: 5%;
+            border: 1px solid #bbbfbf;
+            height: 80px;
+            box-shadow:  2px 2px #bbbfbf;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+  
+        .icon-xiangyoujiantou{
+            /* margin-left: 40vw; */
+            position: absolute;
+            right: 5px;
+            
+        }
+        .c>li>div>img{  
+            /* font-size: 10vw; */
+            width: 15vw;
+            height: 15vw;
+            margin-left: 20vw;
+            margin-top: -5vw;
+            color: rgb(0, 162, 255);
+        }
+        /* .c>li>div>img:nth-of-type(2){
+            font-size: 15vw;
+            margin-left: 20vw;
+            margin-top: 2vw;
+            color: rgb(255, 251, 0);
+        } */
+        .icon-gongwenbao{
+            color: rgb(0, 162, 255);
+            font-size: 8vw;
+        }
+        .icon-bianjibiaodanx{
+            color: rgb(0, 162, 255);
+            font-size: 8vw;
+        }
+        .icon-jurassic_submit-form{
+            color: rgb(0, 162, 255);
+            font-size: 8vw;
+        }
+        .icon-ziyuan{
+            color: rgb(0, 162, 255);
+            font-size: 8vw;
+        }
+        .icon-daochubiaodan{
+            color: rgb(0, 162, 255);
+            font-size: 8vw;
+        }
+        .icon-shouye{
+            color:rgb(74, 87, 121);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .icon-hezi101{
+            color:rgb(74, 87, 121);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .icon-geren2{
+            color:rgb(0, 162, 255);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .c{
+            width: 100%;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <span>我的</span>
+        </li>
+        <li>
+            <img src="../img3/GuDing.png">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="../my/1.1.png">
+            <span>崔先生</span>
+        </li>
+        <li>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </li>
+    </ul>
+    <div class="c">
+     <!-- <li>
+        <div>
+            <span class="info">关注网点人员</span><br/>
+            <span class="ww">0</span>
+        
+            <img src="./我的/2.1.png" alt="">
+        </div>
+    </li>
+    <li>
+        <div>
+            <span class="info">关注网点</span><br/>
+            <span class="ww">0</span>
+      
+            <img src="./我的/2.2.png" alt="">
+        </div>
+    </li> -->
+    </div>
+    <ul>
+        <li>
+            <span class="iconfont icon-gongwenbao"></span>
+            <span>我的业务</span>
+        </li>
+        <li>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span class="iconfont icon-bianjibiaodanx"></span>
+            <span>我的排号</span>
+        </li>
+        <li>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span class="iconfont icon-jurassic_submit-form"></span>
+            <span>咨询记录</span>
+        </li>
+        <li>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span class="iconfont icon-ziyuan"></span>
+            <span>身份解绑</span>
+        </li>
+        <li>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span class="iconfont icon-daochubiaodan"></span>
+            <span>常见问题</span>
+        </li>
+        <li>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </li>
+    </ul>
+    <ul>
+        <a href="../index.html">
+         <li>
+             <span class="iconfont icon-shouye"></span>
+             <span>首页</span>
+         </li>
+         </a>
+         <a href="./cuiBan.html">
+         <li>
+             <span class="iconfont icon-hezi101"></span>
+             <span>办业务</span>
+         </li>
+         </a>
+         <a href="./cuimy1.html">
+         <li>
+             <span class="iconfont icon-geren2"></span>
+             <span>我的</span>
+         </li>
+         </a>
+     </ul>
+    <script>
+        var data=[{
+            info:"关注网点",
+            ww:"0",
+            img:"../my/2.1.png"
+        },{
+            info:"关注网点",
+            ww:"0",
+            img:"../my/2.2.png"
+        }
+    ];
+    var c=document.querySelector(".c");
+        console.log(c);
+        for(var i=0;i<data.length;i++){
+            var nli=document.createElement("li");
+            nli.innerHTML=`<div>
+            <span>${data[i].info}</span><br/>
+             <span>${data[i].ww}</span>
+             <img src="${data[i].img}">
+             </div>
+           `;
+            //反引号：es6   反引号可以使用红${}引用变量
+            c.appendChild(nli);
+        }
+    </script>
+</body>
+</html>

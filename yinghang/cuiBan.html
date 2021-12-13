@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动端设计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../font11/iconfont.css">
+    <style>
+        h1,h2,h3,h4,h5,h6,p,ul,form,dl,dd,dt,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        ul{
+            list-style: none;
+        }
+        img{
+            display: block;
+            border: none;
+                        
+        }
+        body{
+            min-width: 320px;
+            /* max-width: 800px; */
+            /* margin: 0 auto; */
+            display: flex;
+            flex-wrap: wrap;
+            
+
+        }
+        span{
+            font-size: 10px;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
+        ul:nth-of-type(-n+3) li{
+            width: 25%;
+            
+        }
+        ul:nth-of-type(4) li{
+            width: 25%;
+            margin-bottom: 100px;
+        }
+        ul:nth-of-type(4) img{
+            width: 40%;
+        }
+        ul:nth-of-type(5){
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            z-index: 55;
+            justify-content: space-around;
+        }
+        .a{
+            width: 100%;
+        }
+        .a>img{
+            float: right;
+            
+        }
+        .icon-shouye{
+            color:rgb(74, 87, 121);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .icon-hezi101{
+            color:rgb(0, 162, 255);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .icon-geren2{
+            color:rgb(74, 87, 121);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .wei{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 50px;
+            background-color: rgb(246, 246, 246);
+            position: fixed;
+            bottom: 0;
+            z-index: 55;
+            justify-content: space-around;
+            margin-bottom: 5vw;
+           
+        }
+        .wei li{
+            width: 13vw;
+            height: 15vw;
+            padding-bottom: 3vw;    
+
+        }
+        .wei li>span :nth-of-type(2){
+            font-size: 2vw;
+            width: 16vw;
+             display: block ruby;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <span>办业务</span>
+        <img src="../img3/GuDing.png" >
+    </div>
+    <span>常用</span>
+    <ul>
+        <li>
+            <img src="../ban/4.1.png">
+            <span>在线取号</span>
+        </li>
+        <li>
+            <img src="../ban/4.2.png">
+            <span>个人开户填单</span>
+        </li>
+        <li>
+            <img src="../ban/4.3.png">
+            <span>现金交款单填单</span>
+        </li>
+    </ul>
+    <span>个人业务</span>
+    <ul>
+        <li>
+            <img src="../ban/1.1.png">
+            <span>信用卡申请</span>
+        </li>
+        <li>
+            <img src="../ban/1.2.png">
+            <span>个人开户填单</span>
+        </li>
+        <li>
+            <img src="../ban/1.3.png">
+            <span>境外汇款填单</span>
+        </li>
+        <li>
+            <img src="../ban/1.4.png">
+            <span>外币取款预约</span>
+        </li>
+        <li>
+            <img src="../ban/1.5.png">
+            <span>零钞兑换预约</span>
+        </li>
+        <li>
+            <img src="../ban/1.6.png">
+            <span>大额取款预约</span>
+        </li>
+        <li>
+            <img src="../ban/1.7.png">
+            <span>保管箱预约</span>
+        </li>
+        <li>
+            <img src="../ban/1.8.png">
+            <span>现金红包预约</span>
+        </li>
+    </ul>
+     <span>公司业务</span>
+    <ul>
+        
+        <li>
+            <a href="./cuiaccount.html">
+                <img src="../ban/1.1.png">
+            </a>
+           
+            <span>对公账户预约</span>
+        </li>
+        <li>
+            <img src="../ban/2.2.png">
+            <span>现金交款单填单</span>
+        </li>
+        <li>
+            <img src="../ban/2.3.png">
+            <span>进账单填单</span>
+        </li>
+        <li>
+            <img src="../ban/2.4.png">
+            <span>现金支票填单</span>
+        </li>
+        <li>
+            <img src="../ban/2.5.png">
+            <span>转账支票填单</span>
+        </li>
+        <li>
+            <img src="../ban/2.6.png">
+            <span>托收凭证填单</span>
+        </li>
+        <li>
+            <img src="../ban/2.7.png">
+            <span>支款凭证填单</span>
+        </li>
+        
+        <li>
+            <a href="./cuiTime.html">
+                <img src="../ban/2.8.png">
+            </a>
+            <span>实时通付款凭证填单</span>
+        </li>
+        
+        <li>
+            <a href="./cuiDianhui.html">
+                <img src="../ban/2.9.png">
+            </a>
+            
+            <span>电汇凭证填单</span>
+        </li>
+        <li>
+            <img src="../ban/2.10.png">
+            <span>跨境快贷测算</span>
+        </li>
+    </ul>
+    <span>特色业务</span>
+    <ul>
+        <li>
+            <img src="../ban/5.1.png">
+            <span>建行到家</span>
+        </li>
+    </ul>
+    <ul class="wei">
+        <a href="../index.html">
+         <li>
+             <span class="iconfont icon-shouye"></span>
+             <span>首页</span>
+         </li>
+         </a>
+         <a href="./cuiBan.html">
+         <li>
+             <span class="iconfont icon-hezi101"></span>
+             <span>办业务</span>
+         </li>
+         </a>
+         <a href="./cuimy1.html">
+         <li>
+             <span class="iconfont icon-geren2"></span>
+             <span>我的</span>
+         </li>
+         </a>
+     </ul>
+</body>
+</html>

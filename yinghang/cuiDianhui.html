@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动端设计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../font11/iconfont.css">
+    <style>
+        h1,h2,h3,h4,h5,h6,p,ul,form,dl,dd,dt,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        a{ text-decoration:none} 
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        img{
+            /* display: block; */
+            border: none;
+            /* float: left; */
+        }
+        body{
+            min-width: 320px;
+            /* max-width: 800px; */
+            /* margin: 0 auto; */
+           display: flex;
+           flex-wrap: wrap;
+           background-color: rgb(246, 246, 246);
+
+        }
+        h2{
+            text-align: center;
+            background-color: #fff;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+           flex-wrap: nowrap;
+           height: 40px;
+           
+        }
+        ul:nth-of-type(2)
+        {
+            box-shadow:  2px 2px #bbbfbf;
+        }
+        ul:nth-of-type(-n+12) li{
+            width: 35%;
+            background-color: #fff;
+            box-shadow:  2px 2px #bbbfbf;
+            height: 40px;
+            line-height: 40px;
+        }
+        ul:nth-of-type(-n+12) li img{
+            position: relative;
+            top: 7px;
+        }
+        ul:nth-of-type(-n+12) li:nth-of-type(2){
+            text-align: center;
+        }
+        .d{
+            width: 80vw;
+            height: 10vw;
+            margin-left: 10vw;
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+            background-color: #666;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .d>span{
+            line-height: 10vw;
+            color: #fff;
+        }
+       .e{
+        width: 100%;
+       }
+       ul:nth-of-type(1) li:nth-of-type(1)>span{
+           line-height: 6vw;
+       }
+       ul:nth-of-type(1) li:nth-of-type(1) img{
+            width: 5vw;
+        }
+        ul:nth-of-type(13){
+            background-color: rgb(246, 246, 246);
+            position: fixed;
+            bottom: 0;
+            z-index: 55;
+            justify-content: space-around;
+           
+        }
+        .a{
+            width: 100%;
+            background-color: #fff;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+        }
+        .b{
+            width: 100%;
+            background-color: #fff;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+        }
+        .s{
+            width: 100%;
+            background-color: #fff;
+            list-style: none;
+        }
+        .s>li img{
+            position: relative;
+            top: 7px;
+        }
+        .s>li>span:nth-of-type(2){
+            margin-left: 16vw;
+        }
+        .icon-qian{
+            color: orange;
+        }
+       
+        ul:nth-of-type(1) li:nth-of-type(3) img{
+            position: relative;
+            left: 25%;
+        }
+        ul:nth-of-type(2) li:nth-of-type(3) img{
+            position: relative;
+            left: 70%;
+        }
+        ul:nth-of-type(3) li:nth-of-type(3) img{
+            position: relative;
+            left: 70%;
+        }
+        ul:last-of-type(1) li:nth-of-type(1)>span:nth-of-type(2){
+            font-size: 32px;
+            color: #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="./cuiBan.html">
+            <span><img src="../time/小于号.png"></span>
+            </a>
+            <span>掌上网点</span>
+        </li>
+        <li>
+
+        </li>
+        <li>
+            <img src="../time/固定标志.png">
+        </li>
+        
+    </ul>
+    <div class="e">
+        <h2>电汇凭证</h2>
+    </div>
+    <div class="a">
+        <span>汇款信息</span>
+    </div>
+    <ul>
+        <li><img src="../time/红点.png">
+            <span>日期</span>
+        </li>
+        <li> <span>2021/11/25</span></li>
+        <li><img src="../time/日历.png"></li>
+    </ul>
+    <ul>
+        <li><img src="../time/白.png">
+            <span>汇款方式</span>
+        </li>
+        <li><span>非必选项</span></li>
+        <li><img src="../time/大于号.png"></li>
+    </ul>
+    <ul>
+        <li><img src="../time/红点.png">
+            <span>汇款人账号</span>
+        </li>
+        <li> <span>请输入</span></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li><img src="../time/红点.png">
+            <span>汇款人全称</span>
+        </li>
+        <li> <span>请输入</span></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li><img src="../time/红点.png">
+            <span>汇款人名称</span>
+        </li>
+        <li> <span>请输入</span></li>
+        <li></li>
+    </ul>
+    <div class="b">
+        <span>收款信息</span>
+    </div>
+    <div class="s">
+        <!-- <li>
+
+            <img src="./实时通付款凭证/红点.png">
+            <span>收款人账号</span>
+            <span>请输入</span>    
+        </li>
+        <li>
+            <img src="./实时通付款凭证/红点.png">
+            <span>收款人全称</span>
+            <span>请输入</span></li>
+        </li>
+        <li>
+            <img src="./实时通付款凭证/红点.png">
+            <span>汇入行名称</span>
+            <span>请输入</span></li>
+        </li>
+        <li>
+            <img src="./实时通付款凭证/红点.png">
+            <span>附加信息及用途</span>
+            <span>请输入</span></li>
+        </li>
+        <li>
+            <img src="./实时通付款凭证/白.png">
+            <span>支付密码</span>
+            <span>非必选项</span></li>
+        </li> -->
+    </div>
+    <ul>
+        <li><img src="../time/红点.png">
+            <span>金额</span>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li>
+            <span class="iconfont icon-qian"></span>
+            <span>0.00</span>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+    <dis class="d">
+        <span>下一步</span>
+    </dis>
+    <script>
+        var data=[{
+            ww:"请输入",
+            ss:"收款人账号",
+            img:"../time/红点.png"
+        },{
+            ww:"请输入",
+            ss:"收款人全称",
+            img:"../time/红点.png"
+        },{
+            ww:"请输入",
+            ss:"汇入行名称",
+            img:"../time/红点.png"
+        },{
+            ww:"请输入",
+            ss:"附加信息及用途",
+            img:"../time/红点.png"
+        },{
+            ww:"非必选项",
+            ss:"支付密码",
+            img:"../time/白.png"
+        }
+    ];
+    var s=document.querySelector(".s");
+        for(var i=0;i<data.length;i++){
+            var nli=document.createElement("li");
+            nli.innerHTML=`<img src="${data[i].img}">
+            <span>${data[i].ss}</span>
+            <span>${data[i].ww}</span>
+           `;
+            //反引号：es6   反引号可以使用红${}引用变量
+            s.appendChild(nli);
+        }
+    </script>
+</body>
+</html>

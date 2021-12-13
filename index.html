@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端设计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./font11/iconfont.css">
+    <link rel="stylesheet" href="./swiper/swiper/swiper-bundle.min.css">
+    <style>
+        h1,h2,h3,h4,h5,h6,p,ul,form,dl,dd,dt,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        ul{
+            list-style: none;
+        }
+        img{
+            display: block;
+            border: none;
+            
+        }
+        body{
+            min-width: 320px;
+            /* max-width: 800px; */
+            /* margin: 0 auto; */
+            display: flex;
+            flex-wrap: wrap;
+            
+
+        }
+        .a{
+            width: 100%;
+            background-color: #fff;
+        }
+        .aa{
+            float: left;
+        }
+        .aa>span{
+            line-height: 6vw;
+        }
+        .ab{
+            float: right;
+        }
+        #header{
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid rgb(74, 87, 121);
+        }
+        .icon-zuojiantou1{
+            font-size: 22px;
+            padding: 2px 6px;
+        }
+        #header>div{
+            flex-grow: 1;
+            display: flex;
+            background-color: #eee;
+            border-radius: 8px;
+            padding-right: 10px;
+            margin-right: 5px;
+        }
+        .icon-sousuo{
+            font-size: 20px;
+            padding-right: 2px 10px;
+        }
+        #search{
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            background-color: #eee;
+            
+        }
+        .b{
+            width: 100%;
+            box-shadow: -2px 0px 5px 1px #bbbfbf,0px -2px 5px 1px #bbbfbf,2px 0px 5px 1px #bbbfbf,0px 2px 5px 1px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+            background-color:rgb(74, 87, 121) ;
+            border-radius: 20px;
+        }
+        .b>span{
+            color: #fff;
+        }
+       .c{
+            width: 100%;
+            /* height: 45vw; */
+            box-shadow: -2px 0px 5px 1px #bbbfbf,0px -2px 5px 1px #bbbfbf,2px 0px 5px 1px #bbbfbf,0px 2px 5px 1px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+       }
+       .c li{
+           width: 100%;
+           height: 20%;
+          /* padding-top: 2vw; */
+            /* margin-bottom: 1vw; */
+           display: flex;
+            flex-wrap: wrap;
+       }
+
+       .caa{
+           float: left;
+       }
+        .cb{
+            float: right;
+        }
+        .cab{
+            background-color: #fff;
+        }
+        .c li:nth-of-type(1) img{
+            float: right;
+        }
+        .cc{
+            float: left;
+            width: 55%;
+        }
+        .cd{
+            float: right;
+            width: 40%;
+        }
+        .cda{
+            float: left;
+        }
+        .da{
+            float: left;
+        }
+        .fa{
+            float: left;
+        }
+        
+        .c li:nth-of-type(5) img:nth-of-type(1){
+            float: left;
+        }
+        .d{
+            width: 100%;
+            box-shadow: -2px 0px 5px 1px #bbbfbf,0px -2px 5px 1px #bbbfbf,2px 0px 5px 1px #bbbfbf,0px 2px 5px 1px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .d li{
+            float: left;
+            width: 25%;
+        }
+        .zhuti{
+            width: 100%;
+            box-shadow:  2px 2px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .zhu{
+            width: 50%;
+            float: left;
+        }
+        .zhuti img{
+            width: 50%;
+        }
+        .rm{
+            width: 100%;
+        }
+        .rm>span{
+            float: left;
+        }
+        body{
+
+margin: 0;
+
+padding: 0;
+
+}
+
+.slide img{
+
+width: 100%;
+
+border: none;
+
+display: block;
+
+}
+
+.slide h3{
+
+position: absolute;
+
+padding: 0;
+
+margin: 0;
+
+left: 0;
+
+bottom: 0;
+
+width: 100%;
+
+padding-left: 20px;
+
+font-size: 16px;
+
+line-height: 30px;
+
+color: #fff;
+
+}
+        .tab{
+            width: 100%;
+           
+        }
+        .t-title{
+            height: 32px;
+            border-bottom: 1px solid #c00;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            left: 0;
+            top:0;
+            /* height: 40px; */
+            background-color: #fff;
+        }
+        .t-title>span{
+            
+            
+            text-align: center;
+            line-height: 32px;
+            font-style: 14px;
+        }
+        .t-title>.cur{
+            border-left: 1px solid #c00;
+            border-right: 1px solid #c00;
+            border-top: 1px solid #c00;
+            background-color: #fff;
+            color: #c00;
+            font-weight: bold;
+            margin-bottom: -1px;
+        }
+        .tc{
+            border: 1px solid #c00;
+            border-top: none;
+            height: 500px;
+            /* font-size: 100px; */
+            /* line-height: 300px; */
+            text-align: center;
+            display: none;
+
+        }
+        .show{
+            display: block;
+        }
+
+
+
+
+        #list{
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        #list li{
+            width: 40%;
+            margin-left: 5px;
+            flex-grow: 1;
+        }
+        #list img{
+            width: 100%;
+        }
+        .title{
+            font-size: 10px;
+        }
+        .content{
+            font-size: 8px;
+        }
+        .cab{
+            width: 20%;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 3vw;
+
+        }
+        .cab>span{
+            margin-left: 1vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-chuansong{
+            position: absolute;
+            right: 3vw;
+        }
+        .caa{
+            margin-left: 3vw;
+        }
+        .dianhua{
+            color: rgb(0, 162, 255);
+        }
+        .MBEfenggeduosetubiao-fasong{
+            color: rgb(0, 162, 255);
+        }
+        
+        .cc>span{
+            margin-left: 3vw;
+        }
+        .cda{
+           
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+           
+        }
+        .cda>span{
+            color: rgb(0, 162, 255);
+        }
+        .cdb>span{
+            color: rgb(0, 162, 255);
+        }
+        .cdb{
+           
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .da{
+            margin-left: 5vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+
+        }
+        .da>span{
+            color: rgb(0, 162, 255);
+        }
+        .db>span{
+            color: rgb(0, 162, 255);
+        }
+        .dc>span{
+            color: rgb(0, 162, 255);
+        }
+        .db{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .dc{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .fa{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .fa>span{
+            color: rgb(0, 162, 255);
+        }
+        .fb{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .fb>span{
+            color: rgb(0, 162, 255);
+        }
+        .fc{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .fc>span{
+            color: rgb(0, 162, 255);
+        }
+        .fd{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .fd>span{
+            color: rgb(0, 162, 255);
+        }
+        .ff{
+            margin-left: 3vw;
+            box-shadow:  2px 2px #bbbfbf;
+            border: 1px solid rgb(0, 162, 255);
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            background-color: #fff;
+            border-radius: 20px;
+            margin-left: 1vw;
+        }
+        .ff>span{
+            color: rgb(0, 162, 255);
+        }
+        .l{
+            height: 1300px;
+        }
+        .icon-xiangyoujiantou{
+            position: absolute;
+            right: 2vw;
+            color: #fff;
+        }
+        .icon-laba{
+            color: #fff;
+        }
+        .icon-tijiaobiaodan{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-bianjibiaodanx{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-geren6{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-jurassic_export-form{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-biaodan{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-daochubiaodan{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .icon-gengduo{
+            margin-left: 3vw;
+            font-size: 10vw;
+            color: rgb(0, 162, 255);
+        }
+        .d>li>span:nth-of-type(2){
+            font-size: 3vw;
+        }
+        .rma>span{
+            position: absolute;
+            right: 2vw;
+            box-shadow: -2px 0px 5px 1px #bbbfbf,0px -2px 5px 1px #bbbfbf,2px 0px 5px 1px #bbbfbf,0px 2px 5px 1px #bbbfbf;
+            /* padding-top:2vw ;
+            padding-bottom: 2vw; */
+            
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .icon-shouye{
+            color:rgb(0, 162, 255);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .icon-hezi101{
+            color:rgb(74, 87, 121);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .icon-geren2{
+            color:rgb(74, 87, 121);
+            margin-bottom: 3vw;
+            font-size: 12vw;
+        }
+        .wei{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 50px;
+            background-color: rgb(246, 246, 246);
+            position: fixed;
+            bottom: 0;
+            z-index: 55;
+            justify-content: space-around;
+            margin-bottom: 5vw;
+           
+        }
+        .wei li{
+            width: 13vw;
+            height: 15vw;
+            padding-bottom: 3vw;    
+
+        }
+        .wei li>span :nth-of-type(2){
+            font-size: 2vw;
+            width: 16vw;
+             display: block ruby;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="a">
+        <div class="aa">
+            <span>掌上网点</span>
+
+        </div>
+        <div class="ab">
+            <img src="./img3/GuDing.png">
+
+        </div>
+       
+    </div>
+    <div id="header">
+        <span>大连市</span>
+        <span class="iconfont icon-xiajiantou"></span>
+        <div>
+            <span class="iconfont icon-fangdajing"></span>
+            <input type="search" placeholder="输入附近网点名称搜索" id="search" name="search">
+        </div>
+       
+    </div>
+    <div class="b">
+        <span class="iconfont icon-laba"></span>
+        <span>大连大华支行欢迎你!</span>
+        <span class="iconfont icon-xiangyoujiantou"></span>
+    </div>
+    <ul class="c">
+        <li>
+            
+                <div class="caa">
+                    <span>大连大华支行</span>
+
+                </div>
+                
+                <div class="cab">
+                    <span>进入网点</span>
+                </div>
+            
+            
+                <span class="iconfont icon-chuansong"></span>
+            
+
+        </li>
+        <li>
+            <div class="cc">
+                <span>1.6km | 高新园区博翔街...</span>
+            </div>
+            
+                <div class="cda">
+                    <span class="iconfont icon-MBEfenggeduosetubiao-fasong"></span>
+                    <span>去这里</span>
+                </div>
+                <div class="cdb">
+                    <span class="iconfont icon-dianhua"></span>
+                    <span>打电话</span>
+                </div>
+            
+
+        </li>
+        <li>
+            
+                <div class="da">
+                    <span>营业</span>
+                </div>
+                <div class="db">
+                    <span>对私</span>
+                </div>
+                <div class="dc">
+                    <span>对公</span>
+                </div>
+
+        </li>
+        <li>
+            
+                <div class="fa">
+                    <span>饮水服务</span>
+                </div>
+                <div class="fb">
+                    <span>卫生间服务</span>
+                </div>
+                <div class="fc">
+                    <span>手机充电</span>
+                </div>
+                <div class="fd">
+                    <span>医药箱</span>
+                </div>
+                <div class="ff">
+                    <span>WIFI</span>
+                </div>
+                <div class="fg">
+                    <img src="./img3/三角.png">
+                </div>
+            
+
+        </li>
+        <li>
+            
+            <span class="iconfont icon-laba"></span>
+                <span>当前排队0人 平均等待0分钟</span>
+            
+            <span class="iconfont icon-xiangyoujiantou"></span>
+
+        </li>
+    </ul>
+    <ul class="d">
+        <li>
+            <span class="iconfont icon-tijiaobiaodan"></span><br/>
+            <span>在线取号</span>
+        </li>
+        <li>
+            <span class="iconfont icon-bianjibiaodanx"></span><br/>
+            <span>现金交款单填单</span>
+        </li>
+        <li>
+            <span class="iconfont icon-tijiaobiaodan"></span><br/>
+            <span>电汇凭证填单</span>
+        </li>
+        <li>
+            <span class="iconfont icon-geren6"></span><br/>
+            <span>个人开户填单</span>
+        </li>
+        <li>
+            <span class="iconfont icon-jurassic_export-form"></span><br/>
+            <span>进账单填单</span>
+        </li>
+        <li>
+            <span class="iconfont icon-biaodan"></span><br/>
+            <span>大额取款预约</span>
+        </li>
+        <li>
+            <span class="iconfont icon-daochubiaodan"></span><br/>
+            <span>建行到家</span>
+        </li>
+        <li>
+            <span class="iconfont icon-gengduo"></span><br/>
+            <span>更多</span>
+        </li>
+    </ul>
+    <div class="zhuti">
+        <div class="zhu">
+            <h2>主题网点</h2>
+            <span>开启你的尊享服务之旅</span>
+
+        </div>
+        
+        <img src="./img3/2.1.png">
+    </div>
+    <div class="rm">
+        <span>热门活动</span>
+        <div class="rma">
+            <span>全部</span>
+
+        </div>
+    </div>
+   
+    <div class="swiper slide"><!-- slide幻灯片 -->
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+              <a href="#"><img src="./img3/1.jpg"></a>
+
+              <h3>这里是标题</h3>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <a href="#"><img src="./img3/1.jpg"></a>
+
+            <h3>这里是标题</h3>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <a href="#"><img src="./img3/1.jpg"></a>
+
+            <h3>这里是标题</h3>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <a href="#"><img src="./img3/1.jpg"></a>
+
+            <h3>这里是标题</h3>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <a href="#"><img src="./img3/1.jpg"></a>
+
+            <h3>这里是标题</h3>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <a href="#"><img src="./img3/1.jpg"></a>
+
+            <h3>这里是标题</h3>
+
+        </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+      <div class="tab">
+        <div class="t-title">
+            <span class="cur">特色餐饮</span>
+            <span>生活服务</span>
+            <span>休闲娱乐</span>
+            <span>汽车生活</span>
+            <span>家电数码</span>
+        </div>
+        <div class="tc show">
+            <ul id="list">
+
+            </ul>
+
+        </div>
+        <div class="tc">2</div>
+        <div class="tc">3</div>
+        <div class="tc">4</div>
+        <div class="tc">4</div>
+    </div>
+     <div class="l">
+
+     </div>
+     <ul class="wei">
+       <a href="./index.html">
+        <li>
+            <span class="iconfont icon-shouye"></span>
+            <span>首页</span>
+        </li>
+        </a>
+        <a href="yinghang/cuiBan.html">
+        <li>
+            <span class="iconfont icon-hezi101"></span>
+            <span>办业务</span>
+        </li>
+        </a>
+        <a href="yinghang/cuimy1.html">
+        <li>
+            <span class="iconfont icon-geren2"></span>
+            <span>我的</span>
+        </li>
+        </a>
+    </ul>
+      <script src="./swiper/swiper/swiper-bundle.min.js"></script>
+
+      <script>
+ 
+         var swiper = new Swiper(".slide", {
+ 
+           pagination: {
+ 
+             el: ".swiper-pagination",
+ 
+             clickable: true,
+ 
+           }, 
+ 
+          
+ 
+         });
+
+
+
+
+
+         var tab=document.querySelector(".tab");
+        var title=tab.getElementsByClassName("t-title")[0];
+        var span=title.querySelectorAll("span");
+        var tc=tab.querySelectorAll(".tc");
+        console.log(tab,title,span,tc);
+        for(var i=0;i<span.length;i++)
+        {
+            span[i].index=i;//index可以是自定义
+            span[i].onmouseover=function(){
+                //内部不能使用i，使用this表示正在
+                for(var j=0;j<span.length;j++)
+                {
+                    span[j].classList.remove("cur");
+                    tc[j].style.display="none"
+                }
+                this.classList.add("cur");
+                tc[this.index].style.display="block";
+            }
+
+        }
+
+
+
+
+        var xmlhttp;
+    if (window.XMLHttpRequest) {
+      //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+      xmlhttp = new XMLHttpRequest();
+    } else {
+      // IE6, IE5 浏览器执行代码
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        //xmlhttp.responseText;
+        //你的ajax代码写在这里，其他位置除了open的前两个参数都不需要也不要改变。
+        //ajax加载成功之后的代码执行位置
+                var jarr=JSON.parse(xmlhttp.responseText);
+        jarr.forEach(function(v,i){
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+                <img src="${v.pic}">
+                <h3>${v.title}</h3>
+                <p>${v.content}</p>
+
+            `;
+            list.appendChild(nli);
+        })
+        //document.write(xmlhttp.responseText);
+        console.log(xmlhttp.responseText)
+        //只有用http的方式查看网页的运行结果才可以避免用本地网页的方式查看ajax运行结果。
+        //vs code中可以使用liver server，post请求用专业的HTTP服务器
+      }
+    }
+       
+    xmlhttp.open("GET", "http://rap2api.taobao.org/app/mock/data/1632421", true);
+    xmlhttp.send();
+
+
+
+    
+    window.onscroll=function(){
+        
+        var t=document.documentElement.scrollTop||document.body.scrollTop;
+        var title=document.querySelector(".t-title");
+        console.log(t);
+        if (t>870) {
+            title.style.position="fixed";
+            
+        }
+        else{
+            title.style.position="static";
+            
+        }
+     }
+
+ </script>
+    
+</body>
+</html>
